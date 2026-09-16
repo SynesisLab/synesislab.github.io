@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SynesisLab — Local-first AI tooling you own</title>
+  <meta name="description" content="Synesis (σύνεσις — understanding) builds open-source, local-first AI tools that run entirely on your own machine. No API keys, no telemetry, nothing leaves your computer." />
+  <meta property="og:title" content="SynesisLab — Local-first AI tooling you own" />
+  <meta property="og:description" content="Open-source, local-first AI tools. Live Notes (fully offline transcription + AI notes) and Prism (modular self-hosted dashboard). MIT licensed, bilingual EN/繁中." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://synesislab.github.io/" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/270813321?v=4" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2318181b'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23fafaf9' font-family='Georgia,serif'%3E%CF%83%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+
+    <header class="site-header">
+      <a class="brand" href="#top">Synesis</a>
+      <nav>
+        <a href="#projects" data-en="Projects" data-zh="專案">Projects</a>
+        <a href="#about" data-en="About" data-zh="關於">About</a>
+        <a href="https://github.com/SynesisLab" target="_blank" rel="noopener">GitHub</a>
+        <button id="lang-toggle" aria-label="Switch language">繁中</button>
+      </nav>
+    </header>
+
+    <!-- hero -->
+    <section class="hero" id="top">
+      <p class="greek">σύνεσις</p>
+      <h1 data-en="Local-first AI tooling you own."
+          data-zh="本機優先、由你掌控的 AI 工具。">
+        Local-first AI tooling you own.
+      </h1>
+      <p class="sub" data-en="Synesis (σύνεσις — “understanding”) builds open-source software that runs AI entirely on your own machine. No API keys, no telemetry, nothing leaves your computer."
+                  data-zh="Synesis（σύνεσις，意為「理解、整合」）打造讓 AI 完全在自己機器上運行的開源軟體。無需 API 金鑰、無遙測、資料不離開你的電腦。">
+        Synesis (σύνεσις — “understanding”) builds open-source software that runs AI entirely on your own machine. No API keys, no telemetry, nothing leaves your computer.
+      </p>
+      <p class="meta-line" data-en="2 projects · 100% offline · 0 cloud calls · EN / 繁中"
+                        data-zh="2 個專案 · 100% 離線 · 0 雲端連線 · EN / 繁中">
+        2 projects · 100% offline · 0 cloud calls · EN / 繁中
+      </p>
+    </section>
+
+    <!-- projects -->
+    <section id="projects">
+      <h2 data-en="Projects" data-zh="專案">Projects</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <a class="project-name" href="https://github.com/SynesisLab/transcribe-livenotes" target="_blank" rel="noopener">Live Notes</a>
+          <span class="status"><span class="dot active"></span><span data-en="Active" data-zh="活躍中">Active</span></span>
+        </div>
+        <p class="desc" data-en="Local-first live transcription + AI-assisted markdown notes. whisper.cpp transcribes on-device with spoken-at timestamps while a background Ollama job distills the transcript into bullets. Fully offline."
+                      data-zh="本機優先的即時轉錄＋AI 輔助 Markdown 筆記。whisper.cpp 在裝置上轉錄（附說話時間戳），背景 Ollama 任務邊聽邊把逐字稿濃縮成重點。完全離線。">
+          Local-first live transcription + AI-assisted markdown notes. whisper.cpp transcribes on-device with spoken-at timestamps while a background Ollama job distills the transcript into bullets. Fully offline.
+        </p>
+        <p class="meta">JavaScript · whisper.cpp · Ollama · React · WebSocket · MIT</p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <a class="project-name" href="https://github.com/SynesisLab/prism" target="_blank" rel="noopener">Prism</a>
+          <span class="status"><span class="dot active"></span><span data-en="Active" data-zh="活躍中">Active</span></span>
+        </div>
+        <p class="desc" data-en="A modular, self-hosted personal dashboard: drop a folder in, get a page. Auto-discovered modules on Fastify + PostgreSQL + Redis, with a programmable AI widget dashboard driven by REST API or LLM agents."
+                      data-zh="模組化的自架式個人儀表板：丟進一個資料夾，就多一個頁面。Fastify + PostgreSQL + Redis 自動發現模組，AI 儀表板可由 REST API 或 LLM 代理操控。">
+          A modular, self-hosted personal dashboard: drop a folder in, get a page. Auto-discovered modules on Fastify + PostgreSQL + Redis, with a programmable AI widget dashboard driven by REST API or LLM agents.
+        </p>
+        <p class="meta">TypeScript · Fastify · PostgreSQL · Redis · BullMQ · Docker · MIT</p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <a class="project-name" href="https://github.com/SynesisLab/prism-modules" target="_blank" rel="noopener">prism-modules</a>
+          <span class="status"><span class="dot archived"></span><span data-en="Archived" data-zh="已封存">Archived</span></span>
+        </div>
+        <p class="desc" data-en="The module collection for Prism, extracted for reuse."
+                      data-zh="Prism 的模組集合，獨立成庫以便取用。">
+          The module collection for Prism, extracted for reuse.
+        </p>
+        <p class="meta">TypeScript</p>
+      </article>
+    </section>
+
+    <!-- philosophy -->
+    <section id="philosophy">
+      <h2 data-en="Why local-first" data-zh="為什麼本機優先">Why local-first</h2>
+      <p class="pillar"><strong data-en="Zero cloud — " data-zh="零雲端——">Zero cloud — </strong><span data-en="No API keys, no telemetry, no network calls beyond localhost. Your data stays on your machine."
+                                        data-zh="無 API 金鑰、無遙測，除本機外沒有任何網路連線，資料只留在你的機器上。">No API keys, no telemetry, no network calls beyond localhost. Your data stays on your machine.</span></p>
+      <p class="pillar"><strong data-en="Own the stack — " data-zh="掌握技術棧——">Own the stack — </strong><span data-en="No subscriptions, no vendor lock-in. MIT licensed and self-hosted — fork it, modify it, run it yourself."
+                                          data-zh="無訂閱、不受供應商鎖定。MIT 授權、可自行架設——自由 fork、修改、自己營運。">No subscriptions, no vendor lock-in. MIT licensed and self-hosted — fork it, modify it, run it yourself.</span></p>
+      <p class="pillar"><strong data-en="Bilingual by default — " data-zh="預設雙語——">Bilingual by default — </strong><span data-en="Every project ships with full English and Traditional Chinese support."
+                                                data-zh="每個專案都內建完整的英文與繁體中文支援。">Every project ships with full English and Traditional Chinese support.</span></p>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="about">
+      <h2 data-en="About" data-zh="關於">About</h2>
+      <p data-en="SynesisLab is an independent, open-source software lab founded in 2026 by Anthony Chen. Synesis (σύνεσις) is ancient Greek for “understanding” — the act of putting things together. The mission is the same: capable AI, with ownership and privacy, one self-hosted tool at a time."
+        data-zh="SynesisLab 是由 Anthony Chen 於 2026 年創立的獨立開源軟體實驗室。Synesis（σύνεσις）在古希臘語中意為「理解」——把事物整合在一起。這正是我們的使命：讓強大的 AI 與所有權、隱私重新整合，一次打造一個可自架的工具。">
+        SynesisLab is an independent, open-source software lab founded in 2026 by Anthony Chen. Synesis (σύνεσις) is ancient Greek for “understanding” — the act of putting things together. The mission is the same: capable AI, with ownership and privacy, one self-hosted tool at a time.
+      </p>
+      <p class="links-line">
+        <a class="link" href="https://github.com/SynesisLab" target="_blank" rel="noopener">GitHub ↗</a>
+        <span aria-hidden="true">·</span>
+        <a class="link" href="https://www.linkedin.com/in/anthony-ytc/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2026 SynesisLab · <a class="link" href="https://github.com/SynesisLab" target="_blank" rel="noopener">github.com/SynesisLab</a></p>
+      <p class="tiny" data-en="This site makes zero network requests." data-zh="本網站不發出任何網路請求。">This site makes zero network requests.</p>
+    </footer>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
