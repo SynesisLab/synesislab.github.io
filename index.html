@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SynesisLab — Local-first AI tooling you own</title>
-  <meta name="description" content="Synesis (σύνεσις — understanding) builds open-source, local-first AI tools that run entirely on your own machine. No API keys, no telemetry, nothing leaves your computer." />
+  <meta name="description" content="Synesis (σύνεσις — understanding) builds open-source, local-first AI tools that run entirely on your own machine. No telemetry, and nothing leaves your computer unless you send it there yourself." />
   <meta property="og:title" content="SynesisLab — Local-first AI tooling you own" />
-  <meta property="og:description" content="Open-source, local-first AI tools. Live Notes (fully offline transcription + AI notes) and Prism (modular self-hosted dashboard). MIT licensed, bilingual EN/繁中." />
+  <meta property="og:description" content="Open-source, local-first AI tools. Live Notes (fully offline transcription + AI notes), Prism (modular self-hosted dashboard), and Ternion (Windows LLM chat with Triad model routing). MIT licensed, bilingual EN/繁中." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://synesislab.github.io/" />
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/270813321?v=4" />
@@ -33,13 +33,13 @@
           data-zh="本機優先、由你掌控的 AI 工具。">
         Local-first AI tooling you own.
       </h1>
-      <p class="sub" data-en="Synesis (σύνεσις — “understanding”) builds open-source software that runs AI entirely on your own machine. No API keys, no telemetry, nothing leaves your computer."
-                  data-zh="Synesis（σύνεσις，意為「理解、整合」）打造讓 AI 完全在自己機器上運行的開源軟體。無需 API 金鑰、無遙測、資料不離開你的電腦。">
-        Synesis (σύνεσις — “understanding”) builds open-source software that runs AI entirely on your own machine. No API keys, no telemetry, nothing leaves your computer.
+      <p class="sub" data-en="Synesis (σύνεσις — “understanding”) builds open-source software that runs AI entirely on your own machine. No telemetry, and nothing leaves your computer unless you send it there yourself."
+                  data-zh="Synesis（σύνεσις，意為「理解、整合」）打造讓 AI 完全在自己機器上運行的開源軟體。無遙測；除非你親自傳送，資料不會離開你的電腦。">
+        Synesis (σύνεσις — “understanding”) builds open-source software that runs AI entirely on your own machine. No telemetry, and nothing leaves your computer unless you send it there yourself.
       </p>
-      <p class="meta-line" data-en="2 projects · 100% offline · 0 cloud calls · EN / 繁中"
-                        data-zh="2 個專案 · 100% 離線 · 0 雲端連線 · EN / 繁中">
-        2 projects · 100% offline · 0 cloud calls · EN / 繁中
+      <p class="meta-line" data-en="3 projects · local-first · zero telemetry · EN / 繁中"
+                        data-zh="3 個專案 · 本機優先 · 零遙測 · EN / 繁中">
+        3 projects · local-first · zero telemetry · EN / 繁中
       </p>
     </section>
 
@@ -73,6 +73,18 @@
 
       <article class="project">
         <div class="project-head">
+          <a class="project-name" href="https://github.com/SynesisLab/Ternion" target="_blank" rel="noopener">Ternion</a>
+          <span class="status"><span class="dot active"></span><span data-en="Active" data-zh="活躍中">Active</span></span>
+        </div>
+        <p class="desc" data-en="Local-first Windows desktop for chatting and working with LLMs — native Ollama plus any OpenAI-compatible endpoint. Its Triad routing system (Herald / Scout / Titan) picks the right model for every message: fast for small asks, capable for hard work. Streaming chat, MCP tools, vision, SQLite history, and a one-toggle local-only mode."
+                      data-zh="本機優先的 Windows LLM 聊天桌面應用——原生支援 Ollama 與任何 OpenAI 相容端點。Triad 路由系統（Herald／Scout／Titan）為每則訊息自動挑選最合適的模型：小事交給快的、難事交給強的。串流回應、MCP 工具、視覺輸入、SQLite 歷史，以及一鍵純本機模式。">
+          Local-first Windows desktop for chatting and working with LLMs — native Ollama plus any OpenAI-compatible endpoint. Its Triad routing system (Herald / Scout / Titan) picks the right model for every message: fast for small asks, capable for hard work. Streaming chat, MCP tools, vision, SQLite history, and a one-toggle local-only mode.
+        </p>
+        <p class="meta">Rust · Tauri 2 · React · TypeScript · SQLite · MIT</p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
           <a class="project-name" href="https://github.com/SynesisLab/prism-modules" target="_blank" rel="noopener">prism-modules</a>
           <span class="status"><span class="dot archived"></span><span data-en="Archived" data-zh="已封存">Archived</span></span>
         </div>
@@ -87,8 +99,8 @@
     <!-- philosophy -->
     <section id="philosophy">
       <h2 data-en="Why local-first" data-zh="為什麼本機優先">Why local-first</h2>
-      <p class="pillar"><strong data-en="Zero cloud — " data-zh="零雲端——">Zero cloud — </strong><span data-en="No API keys, no telemetry, no network calls beyond localhost. Your data stays on your machine."
-                                        data-zh="無 API 金鑰、無遙測，除本機外沒有任何網路連線，資料只留在你的機器上。">No API keys, no telemetry, no network calls beyond localhost. Your data stays on your machine.</span></p>
+      <p class="pillar"><strong data-en="Local-first — " data-zh="本機優先——">Local-first — </strong><span data-en="No telemetry, no accounts, no background calls. Where cloud endpoints are supported they are strictly opt-in — Ternion ships a one-toggle local-only mode."
+                                        data-zh="無遙測、無帳號、無背景連線。支援雲端端點之處皆為明確選用——Ternion 甚至內建一鍵純本機模式。">No telemetry, no accounts, no background calls. Where cloud endpoints are supported they are strictly opt-in — Ternion ships a one-toggle local-only mode.</span></p>
       <p class="pillar"><strong data-en="Own the stack — " data-zh="掌握技術棧——">Own the stack — </strong><span data-en="No subscriptions, no vendor lock-in. MIT licensed and self-hosted — fork it, modify it, run it yourself."
                                           data-zh="無訂閱、不受供應商鎖定。MIT 授權、可自行架設——自由 fork、修改、自己營運。">No subscriptions, no vendor lock-in. MIT licensed and self-hosted — fork it, modify it, run it yourself.</span></p>
       <p class="pillar"><strong data-en="Bilingual by default — " data-zh="預設雙語——">Bilingual by default — </strong><span data-en="Every project ships with full English and Traditional Chinese support."
